@@ -22,12 +22,8 @@ public class ACKlineView: UIView {
     
     weak var dataSource : ACKLineViewDelegate?
     
-    var path : UIBezierPath?
-    var mylayer : CAShapeLayer!
-    
-    public override class func layerClass() -> AnyClass{
-        return CAShapeLayer().classForCoder
-    }
+//    var paths : [CAShapeLayer]?
+    var path : CAShapeLayer?
     
     public override init(frame: CGRect){
         super.init(frame: frame)
@@ -41,13 +37,26 @@ public class ACKlineView: UIView {
     }
     
     internal func configModel(){
-        path = UIBezierPath()
-        mylayer = self.layer as! CAShapeLayer;
+        path = CAShapeLayer()
+        self.layer.addSublayer(path!)
+        resizeBG()
         
+        path?.backgroundColor = UIColor.redColor().CGColor
+        
+    }
+    
+    internal func resizeBG(){
+        path?.position = layer.position
+        path?.bounds = layer.bounds;
     }
     
     internal func startAnimation(){
         
+    }
+    
+    public override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        resizeBG()
     }
 
 

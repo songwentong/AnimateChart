@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzd-Xf-K9D" customClass="ACKlineView" customModule="AnimateChart" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -26,15 +26,19 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="vzd-Xf-K9D" secondAttribute="trailing" id="PXP-eW-4sL"/>
-                            <constraint firstItem="vzd-Xf-K9D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kx9-hj-5dA"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vzd-Xf-K9D" secondAttribute="bottom" id="l4E-Tc-H3A"/>
-                            <constraint firstItem="vzd-Xf-K9D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="t9Z-EN-PhP"/>
+                            <constraint firstItem="vzd-Xf-K9D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Roa-N6-1Q6"/>
+                            <constraint firstItem="vzd-Xf-K9D" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ULL-w9-TOV"/>
+                            <constraint firstItem="vzd-Xf-K9D" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dD8-e6-YZr"/>
+                            <constraint firstItem="vzd-Xf-K9D" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="rvA-gR-klb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kLineView" destination="vzd-Xf-K9D" id="XBg-3g-Wgn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="416" y="372"/>
         </scene>
     </scenes>
 </document>
