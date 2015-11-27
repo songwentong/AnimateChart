@@ -39,7 +39,6 @@ public class ACKlineView: UIView {
     internal func configModel(){
         path = CAShapeLayer()
         self.layer.addSublayer(path!)
-        resizeBG()
         
         path?.backgroundColor = UIColor.redColor().CGColor
         
@@ -54,11 +53,24 @@ public class ACKlineView: UIView {
         
     }
     
+    
+    /*
     public override func layoutIfNeeded() {
         super.layoutIfNeeded()
-        resizeBG()
+//        resizeBG()
     }
 
+    
+    public override func updateConstraints() {
+        super.updateConstraints()
+//        resizeBG()
+    }
+*/
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        resizeBG()
+    }
 
 
     
