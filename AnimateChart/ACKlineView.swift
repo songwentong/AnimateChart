@@ -22,24 +22,42 @@ public class ACKlineView: UIView {
     
     weak var dataSource : ACKLineViewDelegate?
     
+    var path : UIBezierPath?
+    var mylayer : CAShapeLayer!
+    
+    public override class func layerClass() -> AnyClass{
+        return CAShapeLayer().classForCoder
+    }
+    
     public override init(frame: CGRect){
         super.init(frame: frame)
+        
     }
 
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        configModel()
+        startAnimation()
+    }
+    
+    internal func configModel(){
+        path = UIBezierPath()
+        mylayer = self.layer as! CAShapeLayer;
+        
+    }
+    
+    internal func startAnimation(){
+        
     }
 
-//    required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
-//    }
+
 
     
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override public func drawRect(rect: CGRect) {
+//    override public func drawRect(rect: CGRect) {
         // Drawing code
-    }
+//    }
     
 
 }
