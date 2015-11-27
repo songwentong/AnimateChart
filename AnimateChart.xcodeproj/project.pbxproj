@@ -12,6 +12,7 @@
 		E1D9DBC11C087FAD00E155B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D9DBBF1C087FAD00E155B8 /* Main.storyboard */; };
 		E1D9DBC31C087FAD00E155B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D9DBC21C087FAD00E155B8 /* Assets.xcassets */; };
 		E1D9DBC61C087FAD00E155B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D9DBC41C087FAD00E155B8 /* LaunchScreen.storyboard */; };
+		E1D9DBD01C08801600E155B8 /* ACKlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9DBCF1C08801600E155B8 /* ACKlineView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E1D9DBC21C087FAD00E155B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1D9DBC51C087FAD00E155B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1D9DBC71C087FAD00E155B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D9DBCF1C08801600E155B8 /* ACKlineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACKlineView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,8 @@
 		E1D9DBBA1C087FAD00E155B8 /* AnimateChart */ = {
 			isa = PBXGroup;
 			children = (
+				E1D9DBCE1C087FE400E155B8 /* ChartViews */,
+				E1D9DBCD1C087FD900E155B8 /* Classes */,
 				E1D9DBBB1C087FAD00E155B8 /* AppDelegate.swift */,
 				E1D9DBBD1C087FAD00E155B8 /* ViewController.swift */,
 				E1D9DBBF1C087FAD00E155B8 /* Main.storyboard */,
@@ -62,6 +66,21 @@
 				E1D9DBC71C087FAD00E155B8 /* Info.plist */,
 			);
 			path = AnimateChart;
+			sourceTree = "<group>";
+		};
+		E1D9DBCD1C087FD900E155B8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E1D9DBCE1C087FE400E155B8 /* ChartViews */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9DBCF1C08801600E155B8 /* ACKlineView.swift */,
+			);
+			name = ChartViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1D9DBD01C08801600E155B8 /* ACKlineView.swift in Sources */,
 				E1D9DBBE1C087FAD00E155B8 /* ViewController.swift in Sources */,
 				E1D9DBBC1C087FAD00E155B8 /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +306,7 @@
 				E1D9DBCC1C087FAD00E155B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
